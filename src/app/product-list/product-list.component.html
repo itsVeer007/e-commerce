@@ -2,7 +2,7 @@
   <h2>Products</h2>
   <div class="card my-2 p-3 w-auto" *ngFor="let product of mydata">
     <h3 class="m-0">{{product.name}}</h3>
-    <p class="w-50">{{product.description}}</p>
+    <p class="w-50" *ngIf="product.description">{{product.description}}</p>
 
     <div class="d-flex">
       <button class="mb-2" mat-stroked-button color="primary">Buy</button>
